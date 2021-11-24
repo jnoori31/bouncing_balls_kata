@@ -1,5 +1,5 @@
-# frozen_string_literal: true
-require 'games_controller'
+require './nimrod'
+require 'nimrod'
 
 describe Nimrod do
   it '1- should return 3' do
