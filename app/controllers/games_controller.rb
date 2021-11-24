@@ -9,4 +9,3 @@ class GamesController < ApplicationController
     counter
   end
 end
-end
