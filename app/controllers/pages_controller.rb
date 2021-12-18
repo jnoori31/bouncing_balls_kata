@@ -5,7 +5,7 @@ end
 
 require nimrod
 
-def calculate
+def playGame
 	random = 3 random variables
 	computer_answer = nimrod(random)
 
