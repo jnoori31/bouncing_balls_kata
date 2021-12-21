@@ -7,8 +7,6 @@ class Nimrod
     counter
   end
 end
-
-
 # Code just updates counter
 # Want code to tell us what the bounce should be
 # Display bounce
@@ -30,6 +28,14 @@ valid_questions = {
 
 questions.push(valid_questions)
 end
+
+100.times do
+  question = Question.new(
+    height: rand(0..10),
+    bounce: rand(0..10),
+    window: rand(0..10)
+    )
+  question.save!
 
 def play_game
   @user_guess(b)
