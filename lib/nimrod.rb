@@ -7,3 +7,8 @@ class Nimrod
     counter
   end
 end
+
+
+# Code just updates counter
+# Want code to tell us what the bounce should be
+# Display bounce
