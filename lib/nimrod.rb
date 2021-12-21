@@ -13,13 +13,12 @@ end
 # Want code to tell us what the bounce should be
 # Display bounce
 
-
-
+def valid_question
 questions = []
 
-h = h.rand(0..10),
-b = b.rand(0..10),
-w = w.rand(0..10),
+h = rand(0..10),
+b = rand(0..10),
+w = rand(0..10),
 
 # if condition XYZ create 100 hashes
 
@@ -30,5 +29,9 @@ valid_questions = {
 }
 
 questions.push(valid_questions)
+end
 
-
+def play_game
+  @user_guess(b)
+  question = Question.all.sample
+  end
