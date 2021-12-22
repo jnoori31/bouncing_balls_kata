@@ -10,12 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_22_141922) do
+ActiveRecord::Schema.define(version: 2021_12_22_154116) do
 
   create_table "games", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "question_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "wins"
+    t.index ["question_id"], name: "index_games_on_question_id"
+    t.index ["user_id"], name: "index_games_on_user_id"
   end
 
   create_table "questions", force: :cascade do |t|
@@ -32,4 +36,6 @@ ActiveRecord::Schema.define(version: 2021_12_22_141922) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "games", "questions"
+  add_foreign_key "games", "users"
 end

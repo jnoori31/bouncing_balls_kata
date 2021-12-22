@@ -3,15 +3,15 @@ class PagesController < ApplicationController
 	end
 end
 
-require nimrod
+# require nimrod
 
-def playGame
-	random = 3 random variables
-	computer_answer = nimrod(random)
+# def playGame
+# 	random = 3 random variables
+# 	computer_answer = nimrod(random)
 
-	@user_answer(x)
-	checked the @computer_answer
-	end
+# 	@user_answer(x)
+# 	checked the @computer_answer
+# 	end
 
 
 # wallet = 100
