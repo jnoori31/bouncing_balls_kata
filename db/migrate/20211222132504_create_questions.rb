@@ -4,7 +4,7 @@ class CreateQuestions < ActiveRecord::Migration[6.1]
       t.integer :height
       t.integer :bounce
       t.integer :window
-
+      has_many :games
       t.timestamps
     end
   end
